@@ -31,15 +31,30 @@ const questions = [
     message: 'What would you like to include in the Tests section?',
   },
   {
-    type: 'input',
+    type: 'list',
     name: 'license',
-    message: 'What kind of license would you like to add?',
-    choices: ['MIT License', 'N/A']
-  }
+    message: 'What kind of license would you like to use?',
+    choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT License', 'None'],
+  },
+  {
+    type: 'input',
+    name: 'username',
+    message: 'What is your GitHub username?',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
+  },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeToFile(fileName, generateMarkdown(data), (err) => {
+    if (err) throw err;
+    console.log('README.md generated!')
+  })
+}
 
 // TODO: Create a function to initialize app
 function init() {}
