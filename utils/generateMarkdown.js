@@ -66,9 +66,11 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ### If you have any questions, you can reach me at the below locations.
-  - Email: ${data.email}
+
+  ### If you have any questions regarding this project, you can reach me here:
+
   - GitHub: [${data.username}](https://github.com/${data.username})
+  - Email: ${data.email}
 
 `;
 }
