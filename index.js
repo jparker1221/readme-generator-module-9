@@ -34,7 +34,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'What kind of license would you like to use?',
-    choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT License', 'None'],
+    choices: ['Apache License 2.0', 'GNU GPLv3 License', 'MIT License', 'None'],
   },
   {
     type: 'input',
@@ -50,14 +50,18 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeToFile(fileName, generateMarkdown(data), (err) => {
+  fs.writeFile(fileName, generateMarkdown(data), (err) => {
     if (err) throw err;
     console.log('README.md generated!')
   })
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then((data) => {
+    writeToFile('README.md', data)
+  })
+}
 
 // Function call to initialize app
 init();

@@ -15,11 +15,13 @@ My motivation for this project was to create a command-line application that gen
 
 ## Installation
 
+This application requires Node.js and npm to be installed on your computer. Download the .zip file or clone the repository into your source-code editor.
+
 ## Usage
 
 ## License
 
-MIT License
+This application is covered under the MIT license.
 
 ## Contributing
 
