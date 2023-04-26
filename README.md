@@ -15,9 +15,11 @@ My motivation for this project was to create a command-line application that gen
 
 ## Installation
 
-This application requires Node.js and npm to be installed on your computer. Download the .zip file or clone the repository into your source-code editor.
+Download the .zip file or clone the repository into your source-code editor. Navigate to the repository in your terminal and enter "npm i" to install the required dependencies. Please note that this application requires Node.js and npm to be installed on your computer in order to run. 
 
 ## Usage
+
+Open the repository in an integrated terminal. Enter "node index.js" in the command-line and answer the prompted questions to generate your README.md file.
 
 ## License
 
@@ -37,5 +39,4 @@ N/A
 
 - GitHub: https://github.com/jparker1221
 - Email: jonparker1221@gmail.com
-
 
