@@ -1,5 +1,7 @@
 # Professional README Generator
 
+![license](https://img.shields.io/badge/license-MIT-green)
+
 ## Description
 
 My motivation for this project was to create a command-line application that generates a professional README.md file for the user via a series of prompts using the Inquirer package.
@@ -23,7 +25,7 @@ Open the repository in an integrated terminal. Enter "node index.js" in the comm
 
 ## License
 
-This application is covered under the MIT license.
+This application is covered under the MIT License. For more information about this license, visit https://opensource.org/license/mit/.
 
 ## Contributing
 

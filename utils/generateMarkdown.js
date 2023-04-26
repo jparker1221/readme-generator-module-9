@@ -3,11 +3,11 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "Apache License 2.0":
-      return "https://img.shields.io/badge/license-Apache_2.0-green";
+      return "![license](https://img.shields.io/badge/license-Apache_2.0-green)";
     case "GNU GPLv3 License":
-      return "https://img.shields.io/badge/license-GNU_GPLv3-green";
+      return "![license](https://img.shields.io/badge/license-GNU_GPLv3-green)";
     case "MIT License":
-      return "https://img.shields.io/badge/license-MIT-green";
+      return "![license](https://img.shields.io/badge/license-MIT-green)";
     case "None":
       return "";
   }
@@ -34,13 +34,10 @@ function renderLicenseSection(license) {
   if (!license) {
     return "";
   }
-  else {
-  `## License
+  return `## License
   
   This application is covered under the ${license}. For more information about this license, visit ${renderLicenseLink(license)}.`
-  
   }
-}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -66,7 +63,6 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## License
   ${renderLicenseSection(data.license)}
 
   ## Contributing

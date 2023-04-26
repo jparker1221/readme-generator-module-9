@@ -17,6 +17,11 @@ const questions = [
   },
   {
     type: 'input',
+    name: 'installation',
+    message: 'What would you like to include in the Installation section?',
+  },
+  {
+    type: 'input',
     name: 'usage',
     message: 'What would you like to include in the Usage section?',
   },
@@ -50,9 +55,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, generateMarkdown(data), (err) => {
+  fs.writeFile('./examples/'+fileName, generateMarkdown(data), (err) => {
     if (err) throw err;
-    console.log('README.md generated!')
+    console.log('README.md successfully generated!')
   })
 }
 
